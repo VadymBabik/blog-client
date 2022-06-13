@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 
 import { Header } from '../components/Header';
 import { GalleryPosts } from '../components/GalleryPosts';
+import React from 'react';
 
 const Home: NextPage = () => {
   return (

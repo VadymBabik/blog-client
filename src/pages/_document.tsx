@@ -6,6 +6,7 @@ import Document, {
   NextScript
 } from 'next/document';
 import React from 'react';
+import SimpleModal from '../helpers/ModalHelper/SimpleModal/SimpleModal';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -19,7 +20,7 @@ class MyDocument extends Document {
           <meta charSet={'utf-8'} />
           <title>BLOG</title>
         </Head>
-        <body className="h-full relative bg-white overflow-hidden dark:bg-gray-900">
+        <body className={'h-full'}>
           <Main />
           <NextScript />
         </body>

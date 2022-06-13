@@ -1,11 +1,8 @@
 export type ClassName = string;
 export type Href = string;
 
-
 export type Disabled = boolean;
-
-
-
+export type Loading = boolean;
 
 export type ID = string;
 
@@ -18,7 +15,7 @@ export const enum TargetLinc {
 }
 
 export const enum FormMethod {
-  POST = 'POST',
+  POST = 'POST'
 }
 export const enum InputType {
   BUTTON = 'button',

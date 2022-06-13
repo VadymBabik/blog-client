@@ -9,7 +9,6 @@ import { InputField } from '../../../../helpers/FormFilds/InputField';
 
 const AddPostForm = () => {
   const { addPost, validationErrors, registerFields } = useAddPostForm();
-  console.log(validationErrors.imageValidationError);
   return (
     <Form className="space-y-6" onSubmit={addPost}>
       <InputField

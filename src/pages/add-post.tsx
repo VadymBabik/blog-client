@@ -1,17 +1,26 @@
+import dynamic from 'next/dynamic';
+import { Fragment } from 'react';
+
 import type { NextPage } from 'next';
 import { Header } from '../components/Header';
-import AddPostForm from "../components/Post/Forns/AddpostForm/AddPostForm";
+
+const AddPostForm = dynamic(
+  import('../components/Post/Forns/AddpostForm/AddPostForm'),
+  {
+    ssr: false
+  }
+);
 
 const AddPost: NextPage = () => {
   return (
-    <>
+    <Fragment>
       <Header />
       <div className="bg-cyan-50">
         <div className="container mx-auto">
-          <AddPostForm/>
+          <AddPostForm />
         </div>
       </div>
-    </>
+    </Fragment>
   );
 };
 
